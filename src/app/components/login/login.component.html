@@ -1,1 +1,28 @@
-<p>login works!</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vridhi project</title>
+    <link rel="stylesheet" href="login.component.css">
+</head>
+<body>
+    <div class="container">
+        <form id="loginForm" class="form" >
+            <div class="logo-email">
+                <img src="logo.png" alt="Logo"> 
+                <input type="email" name="email" placeholder="Email" pattern="[a-zA-Z0-9._%+-]+@gmail\.com" title="Please enter a valid email address ending with '@gmail.com'" required>
+            
+            <input type="password" name="password" placeholder="Password" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$" title="Password must be:at least 8 characters long,at least one uppercase letter, at least one lowercase letter,at least one number, at least one special character" required>
+        </div>
+            <button type="submit" name="submit" class="btn">Login</button>
+        
+        </form>
+        <div class="signup-link">
+            <span class="Signup">Don't have an account?</span>
+            <a routerLink="/register" class="button">Sign Up</a> 
+        </div>
+    </div>
+</body>
+</html>
+
