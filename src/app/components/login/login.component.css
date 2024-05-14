@@ -1,57 +1,70 @@
-body {
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  overflow: hidden;
-  background-color: rgb(226, 215, 215);
-}
 .container {
-  width: 70%; 
-  max-width: 400px; 
-  margin: auto;
-  padding: 40px 10px; 
-  border: 1px solid #ccc;
-  background-color:white;
-  border-radius: 13px;
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  text-align: center; 
 }
-.logo-email {
-  margin-bottom: 10px; 
- 
+.form-group {
+  margin-bottom: 20px;
 }
-.logo-email img {
-  width: 50px; 
-  height: auto;    
+label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
 }
-.btn{
-  margin-bottom:-90px;
-} 
-.form input[type="email"],
-.form input[type="password"],
-.form button {
-  width: 90%;
-  padding: 12px; 
-  margin-bottom: 20px; 
-  border: 1px solid #1f1d1d;
-  border-radius: 5px;
-  background-color: rgb(59, 131, 157);
+.logo-email{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
 }
-.form input[type="email"] ,
-.form input[type="password"] {
-  background-color: rgb(249, 249, 249);
+.logo-email img{
+  height: 100px;
+  width: 100px;
+  
 }
-.signup-link {
-  text-align: center;
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
 }
-.signup-link a {
-  text-decoration: none;
-  color: #333;
+button.btn {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
 }
-.signup-link a:hover {
-  text-decoration: underline;
+button.btn-primary {
+  background-color: #151253;
+  color: white;
+  width: 100%;
+  font-size: 20px;
 }
 
+button.btn-secondary {
+  background-color: #6c757d;
+  color: white;
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+.signup-link{
+  margin-top: 20px;
+  font-size: 18px;
+  letter-spacing: 1px;
+  padding: 10px;
+}
+.signup-link a{
+  margin-left: 10px;
+}
+
+@media (max-width: 767px) {
+  .container {
+  margin:30% 0 0 0
+}
+}

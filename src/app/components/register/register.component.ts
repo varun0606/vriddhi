@@ -9,8 +9,16 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 })
 export class RegisterComponent implements OnInit {
   registerForm!: FormGroup;
+  requestOTP(): void {
+    console.log("Requesting OTP for:", this.registerForm.get('phoneNumber')?.value);
+
+    // Add logic to request OTP from your backend
+  }
   
   constructor(private formBuilder: FormBuilder) { }
+
+
+  
 
   ngOnInit(): void {
     this.registerForm = this.formBuilder.group({
