@@ -6,8 +6,6 @@
   padding: 20px;
   background-color: #f6f4f4;
 }
-
-
 @media (max-width: 768px) {
   .footer{
     gap: 23px;

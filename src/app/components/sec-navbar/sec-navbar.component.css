@@ -1,7 +1,7 @@
 .sec-nav {
   padding: 5px;
-  margin: 10px 0 0 10px; /* Adjust margin for better alignment */
-  overflow-x: auto; /* Enable horizontal scrolling for small screens */
+  margin: 10px 0 0 10px; 
+  overflow-x: auto; 
 }
 
 .sec-nav ul {
@@ -10,24 +10,21 @@
   margin: 0;
   display: flex;
   flex-wrap: nowrap;
-  /* Ensure items stay in one row */
-  /* Hide any content that overflows */
+  
 }
 
 .sec-nav li {
   flex: 0 0 auto;
   margin-right: 10px;
-  /* Prevent items from growing or shrinking */
+  /* it Prevent items from growing or shrinking */
 }
 
 .sec-nav a {
   display: block;
   padding: 10px;
   white-space: nowrap;
-  /* Prevent text wrapping */
   overflow: hidden;
   text-overflow: ellipsis;
-  /* Display ellipsis for overflow text */
 }
 
 a {
@@ -37,25 +34,17 @@ a {
 }
 
 a:hover {
-  /* text-decoration: underline; */
   color: rgb(20, 34, 228);
 }
 
-/* @media (max-width: 767px) {
-  .sec-nav a {
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    padding: 3px;
-  }
-} */
+
 @media (max-width: 767px) {
   .sec-nav {
-    margin-left: 0; /* Adjust margin for better alignment on small screens */
+    margin-left: 0; 
     margin-right: 0;
   }
 
   .sec-nav li {
-    margin-right: 5px; /* Reduce space between list items on small screens */
+    margin-right: 5px; 
   }
 }

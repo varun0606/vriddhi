@@ -5,7 +5,7 @@
   background-color: #f6f4f4;
   color: #fff;
   padding: 10px 20px;
-  flex-wrap: wrap; /* Ensure content wraps to next row when needed */
+  flex-wrap: wrap; 
   align-items: center;
 }
 
@@ -13,7 +13,7 @@
   font-size: 1.2em;
   padding: 2px 10px;
   height: 40px;
-  flex: 1 1 auto; /* Let logo grow or shrink as needed */
+  flex: 1 1 auto; 
   max-width: 100px;
 
 }
@@ -27,12 +27,9 @@
   border:1px solid #ccc;
   background-color: white;
   width: 220px;
-  /* margin: 0 -90px; */
-
 }
 
 .search-input {
-  /* margin-left: 90px; */
   padding: 9px;
   border-radius: 5px;
   border: 1px solid #ccc;
@@ -53,13 +50,13 @@
 }
 
 .searching-pt {
-  flex: 1 1 auto; /* Allow searching part to grow or shrink */
+  flex: 1 1 auto; 
   display: flex;
   align-items: center;
   justify-content: start;
   margin-top: 10px; 
   gap: 20px;
-  /* margin-left: -465px; */
+ 
 }
 
 .search-icons {
@@ -77,21 +74,10 @@
   justify-content: center;
 }
 
-.logout,
+ .logout,
 .sell {
-  cursor: pointer;
-
-
   font-size: large;
-  color: #0e0d0d;
-}
-
-.fas {
-  font-size: inherit;
-}
-
-.logout {
-
+  
 }
 
 
@@ -121,7 +107,7 @@
 }
 
 .sell:hover {
-  background-color: #f4a70e;
+  background-color: #eaa418;
 }
 a{
   text-decoration: none;
@@ -130,11 +116,9 @@ a{
 
 
 @media (max-width: 768px) {
-  /* .searching-pt {
-      display: none; 
-  } */
+ 
   .navbar {
-    flex-direction: column; /* Stack items vertically */
+    flex-direction: column; 
   }
  
 

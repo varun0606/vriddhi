@@ -11,12 +11,5 @@ export class QuickRecomComponent {
   toggleShowMore() {
       this.showMore = !this.showMore;
   }
-  product: any; // Define a property to hold the product object
-
-  constructor(private router: Router) { }
-
-  navigateToProductDetail(product: any): void {
-    // Navigate to the product detail page and pass the product object as a query parameter
-    this.router.navigate(['/product'], { queryParams: { product: product } });
-  }
+ 
 }

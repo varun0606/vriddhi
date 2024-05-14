@@ -11,15 +11,9 @@ export class RegisterComponent implements OnInit {
   registerForm!: FormGroup;
   requestOTP(): void {
     console.log("Requesting OTP for:", this.registerForm.get('phoneNumber')?.value);
-
-    // Add logic to request OTP from your backend
   }
   
   constructor(private formBuilder: FormBuilder) { }
-
-
-  
-
   ngOnInit(): void {
     this.registerForm = this.formBuilder.group({
       fullName: ['', Validators.required],
@@ -29,11 +23,10 @@ export class RegisterComponent implements OnInit {
       password: ['', [Validators.required, Validators.minLength(6)]]
     });
   }
-
+  
   onSubmit(): void {
     if (this.registerForm.valid) {
       console.log(this.registerForm.value);
-      // Here you would typically handle the form submission to your backend
     }
   }
 }

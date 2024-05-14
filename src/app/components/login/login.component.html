@@ -16,12 +16,18 @@
             </div>
                 <div class="form-group">
                     <label for="email">Email</label>
-                    <input type="email" id="email" formControlName="email" class="form-control">
+                    <input type="email" id="email" formControlName="email" class="form-control" pattern="[a-zA-Z0-9._%+-]+@gmail\.com" title="Please enter a valid email address ending with '@gmail.com'" required>
                 </div>
 
                 <div class="form-group">
                     <label for="password">Password</label>
-                    <input type="password" id="password" formControlName="password" class="form-control">
+                    <input type="password" id="password" formControlName="password" class="form-control"  pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$" 
+                    title="Password must be:
+                    at least 8 characters long,
+                    at least one uppercase letter,
+                    at least one lowercase letter,
+                    at least one number,
+                    at least one special character" required >
                 </div>
             
             <button type="submit" class="btn btn-primary">Submit</button>

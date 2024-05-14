@@ -17,7 +17,5 @@ export class DecorativesComponent {
     'assets/decorative/d2.jpg',
     'assets/decorative/d3.jpg',
     'assets/decorative/d4.jpg',
-   
-
   ];
 }

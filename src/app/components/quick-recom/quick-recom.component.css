@@ -97,7 +97,6 @@
   background-color: white;
 }
 
-/* Media Query for Mobile Screens */
 @media (max-width: 600px) {
   .product-details {
     gap: 20px; 

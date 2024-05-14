@@ -17,8 +17,5 @@ export class OthersComponent {
     'assets/images4.jpg',
     'assets/images8.jpg',
     'assets/images9.jpg',
-    
-   
-
   ];
 }

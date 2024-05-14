@@ -14,7 +14,7 @@ export class BannerComponent {
     'assets/car5.jpg',
    
   ];
-  interval = 5; 
+  interval = 500; 
   
   constructor() {}
 }
