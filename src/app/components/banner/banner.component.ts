@@ -7,11 +7,14 @@ import { Component } from '@angular/core';
 })
 export class BannerComponent {
   images = [
-    'assets/jewlrey.jpg',
+    'assets/card4.png',
     'assets/car2.jpg',
     'assets/car3.jpg',
-    'assets/car4.jpg',
+    'assets/jewlrey.jpg',
     'assets/car5.jpg',
    
   ];
+  interval = 5; 
+  
+  constructor() {}
 }
